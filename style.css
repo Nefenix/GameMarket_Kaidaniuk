@@ -1,15 +1,47 @@
-body{
-    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Приклад градієнту */
-    
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+
 }
 
-header{
+header {
     color: #e40909;
-    font-size: 24px; 
-    font-family: Arial, sans-serif; 
-}
-#header{
-    background-color: black;
-    
+    font-size: 24px;
+    font-family: Arial, sans-serif;
 }
 
+h2 {
+    color: black;
+    text-align: center;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+}
+
+.table__list {
+    display: block;
+}
+
+.table__list a {
+    color: white;
+    align-items: center;
+    font-family: times;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    border: solid;
+    border-color: blueviolet;
+    border-width: 4px;
+    border-radius: 10px;
+    display: block;
+}
+
+.head__list a{
+    display: block;
+}
+
+.table img {
+    font-weight: 128px;
+    height: 128px;
+}
