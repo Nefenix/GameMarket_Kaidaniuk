@@ -1,7 +1,12 @@
 body{
+    margin: 0px;
+    padding: 0px;
     background-color: antiquewhite;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
 }
-header{
+content{
     width: 800px;
     display: flex;
     flex-direction: column;
@@ -15,4 +20,40 @@ header{
     color: white;
     padding: 10px;
     border-radius: 5px;
+
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 5px;
+    letter-spacing: 3px;
+}
+div {
+    border: 1px solid darkgray;
+}
+.items {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+.item {
+    width: 200px;
+    height: 320px;
+    margin-bottom: 10px;
+
+    border: 1px solid wheat;
+    border-radius: 5px;
+    box-shadow: 0 0 7px dimgray;
+}
+.contacts p {
+margin: 3px;
+}
+.contacts p:first-child{
+    font-weight: bold;
+}
+.contacts p:last-child{
+    border-left: 3px solid red;
+}
+.license {
+    font-size: 9px;
+    text-align: justify;
+    color: grey;
 }
