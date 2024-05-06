@@ -1,0 +1,27 @@
+    <!-- Блок назви товару-->
+    <div class="item-title1">Демед</div>
+
+    <!-- Блок зображення товару-->
+    <div class="item-image"></div>
+        <img src="img/Постер.png" alt="Демед">
+
+    <!-- Блок з оплатою частинами-->
+    <div class="parts-pay">
+        <div><img src="img/Постер.png" alt="">6</div>
+        <div><img src="img/Постер.png" alt="">8</div>
+    </div>
+    <!-- Блок ціни-->
+    <div class="priсe">
+        <div><span>3 </span><sup>грн</sup></div>
+        <div><span>4 </span><sup>грн</sup></div>
+    </div>
+     <!-- Блок бонусної ціни-->
+    <div class="prise bonus">
+        <div>ціна за купоночиком</div>
+        <div><span>1.99</span><sup>грн</sup></div>
+    </div>
+    <div class="item">Геча</div>
+                    <div class="item">Юрій</div>
+                    <div class="item">Любич
+
+                    </div>
