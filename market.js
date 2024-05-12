@@ -2,9 +2,14 @@ console.log("Перевірка підключення файлу скрипті
 
 let itemsDiv = document.getElementById("items");
 
+<<<<<<< HEAD
     console.log(itemsDiv)
 if (itemsDiv) {
     console.log(itemsDiv)
+=======
+if (itemsDiv) {
+    console.log(itemsDiv)
+>>>>>>> dc596f848b053ac778f2818d597458c5862cc051
     for (let i = 0; i < 16; i++) {
         itemsDiv.innerHTML += `<div class = "item">${i + 1}</div>`
     }
