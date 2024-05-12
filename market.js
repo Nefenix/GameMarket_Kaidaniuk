@@ -2,9 +2,7 @@ console.log("Перевірка підключення файлу скрипті
 
 let itemsDiv = document.getElementById("items");
 
-<<<<<<< HEAD
     console.log(itemsDiv)
-=======
 if (itemsDiv) {
     console.log(itemsDiv)
     for (let i = 0; i < 16; i++) {
@@ -22,4 +20,3 @@ if (itemsDiv) {
 } else {
     console.log('Блок товарів не знайдено')
 }
->>>>>>> dc596f848b053ac778f2818d597458c5862cc051
