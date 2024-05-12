@@ -31,3 +31,7 @@
     console.log('Поле id:', itemsDiv.id)
     console.log('Поле clientWidth:', itemsDiv.clientWidth)
     console.log('Поле innerHTML:', itemsDiv.innerHTML)
+
+    else {
+    console.log('Блок товарів не знайдено')
+}

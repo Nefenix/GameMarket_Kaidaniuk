@@ -1,27 +1,29 @@
-console.log("Перевірка підключення файлу скриптів js");
+//console.log("Перевірка підключення файлу скриптів js");
+let itemsArray = [
+    'Газонокосарка 43',
+    'Електричний тример 110',
+    'Електрична газонокосарка 32',
+    'Акумулятивний оприскувач 12 N',
+    'Газонокосарка 430',
+    'Електричний тример 130',
+    'Електрична газонокосарка 320',
+    'Акумулятивний оприскувач 12 E ',
+]
 
 let itemsDiv = document.getElementById("items");
 
-<<<<<<< HEAD
-    console.log(itemsDiv)
 if (itemsDiv) {
-    console.log(itemsDiv)
-=======
-if (itemsDiv) {
-    console.log(itemsDiv)
->>>>>>> dc596f848b053ac778f2818d597458c5862cc051
-    for (let i = 0; i < 16; i++) {
-        itemsDiv.innerHTML += `<div class = "item">${i + 1}</div>`
-    }
-    console.log('Поле classlist: ', itemsDiv.classList)
-    console.log('Поле id:', itemsDiv.id)
-    console.log('Поле clientWidth:', itemsDiv.clientWidth)
-    console.log('Поле innerHTML:', itemsDiv.innerHTML)
-
-    itemsDiv.innerText = 'Перший Програмно доданий текст'
-    itemsDiv.innerText += 'Другий Програмно доданий текст'
-
-    itemsDiv.innerText = `<h1>Відформатований HTML код</h1>`
-} else {
+    itemsArray.forEach((items)=>{
+        itemsDiv.innerText += `<div class = "items">${items}</div>`
+    })
+} 
+else {
     console.log('Блок товарів не знайдено')
 }
+
+
+//itemsArray = itemsArray.sort()
+
+//for (let i = 0; i < itemsArray.length; i++){
+ //   console.log(i + '-й елемент: ',itemsArray[i])
+//}
