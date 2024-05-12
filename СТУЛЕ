@@ -25,3 +25,9 @@
                     <div class="item">Любич
 
                     </div>
+
+                    itemsDiv.innerHTML='<div class = item></div>'
+    console.log('Поле classlist: ', itemsDiv.classList)
+    console.log('Поле id:', itemsDiv.id)
+    console.log('Поле clientWidth:', itemsDiv.clientWidth)
+    console.log('Поле innerHTML:', itemsDiv.innerHTML)
