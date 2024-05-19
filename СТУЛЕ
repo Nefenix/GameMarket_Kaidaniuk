@@ -25,13 +25,17 @@
                     <div class="item">Любич
 
                     </div>
-
-                    itemsDiv.innerHTML='<div class = item></div>'
+                    
+    console.log(itemsDiv)
+for (let i = 0; i < 16; i++) {
+        itemsDiv.innerHTML += `<div class = "item">${i + 1}</div>`
+    }
     console.log('Поле classlist: ', itemsDiv.classList)
     console.log('Поле id:', itemsDiv.id)
     console.log('Поле clientWidth:', itemsDiv.clientWidth)
     console.log('Поле innerHTML:', itemsDiv.innerHTML)
 
-    else {
-    console.log('Блок товарів не знайдено')
-}
+    itemsDiv.innerText = 'Перший Програмно доданий текст'
+    itemsDiv.innerText += 'Другий Програмно доданий текст'
+
+    itemsDiv.innerText = `<h1>Відформатований HTML код</h1>`
