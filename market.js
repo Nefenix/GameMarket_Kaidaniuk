@@ -71,33 +71,44 @@ let itemsArray = [
 ]
 
 let itemsDiv = document.getElementById("items");
-
-if (itemsDiv) {
-
-    itemsArray
+// Перевірка існування знайденого блоку 
+if (itemsDiv) { 
+    // Створення блоків по кількості елементів масиву
+    itemsArray.forEach((item, index) => {
+        // Виводимо на веб-сторінку елемент масиву в блок з класом item
+        itemsDiv.innerHTML += `
     
-    .forEach((item,index)=>{
+        <div class="item">
+            <div class="bober">
+                <div class="item-title">${item.name}</div>
+                
+            </div>
+            
 
-        itemsDiv.innerHTML += 
-        `
-        <div class = "item">
-            <h2>Вчитель №${index+1} з ${itemsArray.length}</h2>
-            <p>${item.firstName} ${item.lastName}</p>
-            <p>Предмет: ${item.subject}</p>
-            <p><img src ="${item.photo}" class = "item-image"></p>
-            <p><a href = "${item.url}" target = "_blank" class = "bonus price">Профіль</a></p>
-            <p><a href = "malito:${item.email}?subject=Питання&body=Доброго дня" target = "_blank" class = "price">Написати</a></p>
-        </div>
-        `
-    }) 
-} 
-else {
-    console.log('Блок товарів не знайдено')
+            <p><img src="${item.photo}" " class="item-image"></p>
+
+            <div class="parts-pay">
+            <div><img src="img-market/mono-lapka.png" alt="">6</div>
+            <div><img src="img-market/pb.png" alt="">8</div>
+            </div>
+
+            <div class="prise">
+            <div><span>${item.price}</span><sup>грн</sup></div>
+            <div><span>${item.discountPrice}</span><sup>грн</sup></div>
+            
+            </div>
+
+            <div class="prise bonus">
+            <div>ціна за купоном</div>
+            <div><span>${item.couponPrice}</span><sup>грн</sup></div>
+            </div>
+        </div>`
+    
+
+
+      
+    });
+} else {
+    // Вивід повідомлення про не знайдений блок 
+    console.log('Блок товарів не знайдено');
 }
-
-
-//itemsArray = itemsArray.sort()
-
-//for (let i = 0; i < itemsArray.length; i++){
- //   console.log(i + '-й елемент: ',itemsArray[i])
-//}
